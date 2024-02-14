@@ -1,0 +1,21 @@
+[[ $- == *i* ]] && source "$HOME/.local/share/blesh/ble.sh" --attach=none
+# .bashrc
+
+# User specific aliases and functions
+
+alias RS='rsync -az --delete -e ssh'
+alias LS='rsync -a --delete'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias df='df -h -T' 
+alias chrome='/usr/bin/google-chrome --no-sandbox'
+alias ttt='chmod 700 /root/bin/*.sh'
+alias fwcmd='firewall-cmd --permanent'
+alias fwreload='firewall-cmd --reload'
+alias fwlist='firewall-cmd --list-all'
+
+#  Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
